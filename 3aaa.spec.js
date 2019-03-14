@@ -23,6 +23,7 @@ describe('Estructura de un test', () => {
         // Act
         const resultado = primerValor + segundoValor
 
+        // Assert
         expect(resultado).to.equal(4)
     })
 })

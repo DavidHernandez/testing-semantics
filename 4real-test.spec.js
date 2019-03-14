@@ -15,7 +15,7 @@ describe('A search engine', () => {
         cy.get(results)
             .contains('https://www.cypress.io')
 
-        // Arrange
+        // Assert
             .should((element) => {
                 expect(element).to.exist
             })
@@ -37,10 +37,9 @@ describe('A search engine', () => {
         cy.get(results)
             .contains('https://docs.cypress.io/guides/references/assertions.html')
 
-        // Arrange
+        // Assert
             .should((element) => {
                 expect(element).to.exist
             })
-
     })
 })
